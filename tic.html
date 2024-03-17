@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tic.css">
+    <title>Tic tac Teo</title>
+</head>
+
+<body>
+    <header>TIC TAC TOE</header>
+    <main>
+        <div id="container">
+            <div id="box1" onclick="addToArr(0,0,0)"></div>
+            <div id="box2" onclick="addToArr(0,1,1)"></div>
+            <div id="box3" onclick="addToArr(0,2,2)"></div>
+            <div id="box4" onclick="addToArr(1,0,3)"></div>
+            <div id="box5" onclick="addToArr(1,1,4)"> </div>
+            <div id="box6" onclick="addToArr(1,2,5)"></div>
+            <div id="box7" onclick="addToArr(2,0,6)"></div>
+            <div id="box8" onclick="addToArr(2,1,7)"></div>
+            <div id="box9" onclick="addToArr(2,2,8)"></div>
+            <div id="nothing">
+                <div id="straight1"></div>
+                <div id="straight2"></div>
+                <div id="straight3"></div>
+                <div id="horizontal1"></div>
+                <div id="horizontal2"></div>
+                <div id="horizontal3"></div>
+                <div id="cross1"></div>
+                <div id="cross2"></div>
+                <div id="score-board"></div>
+            </div>
+        </div>
+
+    </main>
+    <script src="tic.js"></script>
+</body>
+
+</html>

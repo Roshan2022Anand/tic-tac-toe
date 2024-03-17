@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    text-align: center;
+    font-size: 50px;
+}
+
+#container {
+    /* border: 5px solid white; */
+    width: 600px;
+    height: 600px;
+    margin: 10px auto;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#container>div {
+    border: 5px solid rgb(255, 255, 255);
+    font-size: 100px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+#box1,
+#box2,
+#box3 {
+    border-top: none !important;
+}
+
+#box1,
+#box4,
+#box7 {
+    border-left: none !important;
+}
+
+#box7,
+#box8,
+#box9 {
+    border-bottom: none !important;
+}
+
+#box3,
+#box6,
+#box9 {
+    border-right: none !important;
+}
+
+#nothing {
+    border: none !important;
+    z-index: -99;
+    position: absolute;
+}
+
+#straight1 {
+    width: 5px;
+    height: 550px;
+    background-color: transparent;
+    position: relative;
+    left: 100px;
+}
+
+#straight2 {
+    width: 5px;
+    height: 550px;
+    background-color: transparent;
+    position: relative;
+    left: 300px;
+    bottom: 550px;
+}
+
+#straight3 {
+    width: 5px;
+    height: 550px;
+    background-color: transparent;
+    position: relative;
+    left: 500px;
+    bottom: 1100px;
+}
+
+#horizontal1 {
+    width: 550px;
+    height: 5px;
+    background-color: transparent;
+    position: relative;
+    left: 30px;
+    bottom: 1590px;
+}
+
+#horizontal2 {
+    width: 550px;
+    height: 5px;
+    background-color: transparent;
+    position: relative;
+    left: 30px;
+    bottom: 1400px;
+}
+
+#horizontal3 {
+    width: 550px;
+    height: 5px;
+    background-color: transparent;
+    position: relative;
+    left: 30px;
+    bottom: 1200px;
+}
+
+#cross1 {
+    width: 700px;
+    height: 5px;
+    background-color: transparent;
+    position: relative;
+    right: 40px;
+    bottom: 1400px;
+    transform: rotate(45deg);
+}
+
+#cross2 {
+    width: 700px;
+    height: 5px;
+    background-color: transparent;
+    position: relative;
+    right: 60px;
+    bottom: 1400px;
+    transform: rotate(-45deg);
+}
